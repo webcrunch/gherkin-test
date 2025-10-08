@@ -53,3 +53,47 @@ features/
 cart.py
 README.md
 requirements.txt
+
+
+⚙️ Installation
+Klona repot:
+
+bash
+git clone <repo-url>
+cd <repo-mapp>
+Skapa och aktivera ett virtuellt Python‑miljö (valfritt men rekommenderat):
+
+bash
+python -m venv venv
+source venv/bin/activate   # macOS/Linux
+venv\Scripts\activate      # Windows
+Installera beroenden:
+
+bash
+pip install -r requirements.txt
+▶️ Köra testerna
+För att köra alla BDD‑scenarier:
+
+bash
+behave
+För att köra ett specifikt feature‑test:
+
+bash
+behave features/discount.feature
+För att köra ett specifikt scenario (via radnummer):
+
+bash
+behave features/discount.feature:10
+✨ Reflektion
+Lätt: Att skriva scenarier i Gherkin och koppla dem till enkla Python‑funktioner.
+
+Svårt: Att undvika duplicerade steps mellan olika feature‑filer (löste det genom att återanvända generella steps och bara lägga till nya där det behövdes).
+
+Lärdom: BDD blir tydligt och kraftfullt när man håller språket enkelt och återanvänder stegdefinitioner smart.
+
+📚 Resurser
+Behave dokumentation
+
+Python typing
+
+Kursmaterialet från Testautomatisering och testverktyg
