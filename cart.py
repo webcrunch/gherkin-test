@@ -1,27 +1,3 @@
-# class Cart:
-#     def __init__(self):
-#         self.items = {}
-
-#     def add_book(self, title, price, quantity=1):
-#         if title in self.items:
-#             self.items[title]["quantity"] += quantity
-#         else:
-#             self.items[title] = {"price": price, "quantity": quantity}
-
-#     def remove_book(self, title):
-#         if title in self.items:
-#             del self.items[title]
-
-#     def clear(self):
-#         self.items = {}
-
-#     def total_books(self):
-#         return sum(item["quantity"] for item in self.items.values())
-
-#     def total_price(self):
-#         return sum(item["price"] * item["quantity"] for item in self.items.values())
-
-
 from typing import Dict, Any
 
 Cart = Dict[str, Dict[str, Any]]
