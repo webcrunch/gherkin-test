@@ -50,6 +50,10 @@ def total_price_with_discount(cart: Cart) -> int:
     return total
 
 
+def login(users: Dict[str, str], username: str, password: str) -> bool:
+    return users.get(username) == password
+
+
 Stock = Dict[str, int]
 
 
